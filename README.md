@@ -69,7 +69,7 @@ You can also find the code [here](https://github.com/imalao/ghc2019_workshop/blo
 - **Upload and save** your code by clicking the arrow at the top. If "Arduino/Gunuino Uno" doesn't come up in the drop-down menu, check to see you have the **Arduino Create Plugin** installed.
 - Your Arduino's light should now be flashing! 
 
-## (Module 3) LEDs
+## (Module 2) LEDs
 
  ![led_pinout](./imgs/led_pinout.png) 
 
