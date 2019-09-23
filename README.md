@@ -140,7 +140,7 @@ Looking at the image above, from top to bottom, the pinout is
     - Search for **Adafruit_seesaw** and click on the **star** to download the library. 
     - Go to **Favorites**, mouse over the Adafruit Seesaw Library, and click **Include** to include the Adafruit seesaw libraries.
  
-  ![installing_adafruit_lib](./imgs/moisture_sensor_pinout.png) 
+  ![moisture_sensor_pinout](./imgs/moisture_sensor_pinout.png) 
   
 - Use the following code sample:
 
