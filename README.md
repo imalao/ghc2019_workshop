@@ -6,7 +6,7 @@ Presenters: Ivy Malao, Star Washington, Yanning Qu
 
 Tables will work together to build a simple device that tells you when to water a plant. Wiring together and writing code for an Arduino, LEDs, moisture sensor, you will be able to use your device in different potted plants to determine which are over or under-watered. 
 
-These instruction are divided into two separate modules: working with the moisture sensor and working with the LEDs. These two modules can be completed in parallel. The last step is to figure out how to use the moisture sensor readings to control the LEDs.
+These instruction are divided into **two separate modules**: working with the **moisture sensor** and working with the **LEDs**. These two modules can be completed in parallel. The **last step** is to figure out how to use the moisture sensor readings to control the LEDs.
 
 # Materials
 
@@ -23,45 +23,55 @@ Moisture sensors include two styles: resistive sensors and capacitive sensors.
 
 Resistive style sensors use two probes to pass current through the soil and read the resistance to get the moisture level. Wet soil causes the soil to conduct electricity better (less resistance). Corrosion of the sensor probes limits the lifespan of a resistive sensor.
 
-Capacitive moisture sensors use only one probe and do not have any exposed metal. They work by measuring the “dielectric” that is formed by the soil. Water is the most important factor that affects the dielectric and the sensor measures specifically the dissolved ions (electrically charged molecules). Capacitive moisture sensors will give you a reading ranging from 200 (very dry) to 2000 (very wet).
+Capacitive moisture sensors use only one probe and do not have any exposed metal. They work by measuring the “dielectric” that is formed by the soil. Water is the most important factor that affects the dielectric and the sensor measures specifically the dissolved ions (electrically charged molecules). **Capacitive moisture sensors will give you a reading ranging from 200 (very dry) to 2000 (very wet).**
+
+![moisture_sensors](./imgs/moisture_sensors.png)
 
 # Instructions
 
-Hardware and Arduino Simulator
+## Hardware and Arduino Simulator
 
 As each table is provided with only one set of hardware components, you can optionally use Tinkercad to simulate the Arduino and hardware: https://www.tinkercad.com/
 
-Hardware – Moisture Sensor 
+## Moisture Sensor 
 
-1.	Connect the moisture sensor to the Arduino using the 4-pin JST-PH cable. JST is just the manufacturer’s name and PH is the series of cable.
+### Hardware
 
- 
+Connect the moisture sensor to the Arduino using the 4-pin JST-PH cable. JST is just the manufacturer’s name and PH is the series of cable.
+
+ ![moisture_sensors](./imgs/moisture_sensors.png)
 
 Looking at the image above, from top to bottom, the pinout is
 
-1.	I2C SCL: Clock Line used to synchronize all data transfers over the I2C bus. 
-2.	I2C SDA: Data Line
-3.	Vin: 3-5V DC. Has a regulator which supplies 5V to the 5V pin/node
-4.	GND: power and logic ground
+1.	**I2C SCL**: Clock Line used to synchronize all data transfers over the I2C bus. 
+2.	**I2C SDA**: Data Line
+3.	**Vin**: 3-5V DC. Has a regulator which supplies 5V to the 5V pin/node
+4.	**GND**: power and logic ground
 
- 
+ ![adafruit_moisture_sensor](./imgs/adafruit_moisture_sensor.png) 
 
-•	Connect Vin Red Wire to the power supply. Use the same voltage that the microcontroller logic is based off of. For most Arduino's, that is 5V.
-•	Connect GND Black Wire to common power/data ground
-•	Connect the SCL Green Wire pin to the I2C clock SCL pin on your Arduino. On an UNO Arduino, this is also known as A5.
-•	Connect the SDA White Wire pin to the I2C data SDA pin on your Arduino. On an UNO Arduino, this is also known as A4.
+- Connect **Vin Red Wire to the power supply**. Use the same voltage that the microcontroller logic is based off of. For most Arduino's, that is 5V.
+- Connect **GND Black Wire to common power/data ground**
+- Connect the **SCL Green Wire pin to the I2C clock SCL pin** on your Arduino. On an UNO Arduino, this is also known as A5.
+- Connect the **SDA White Wire pin to the I2C data SDA pin** on your Arduino. On an UNO Arduino, this is also known as A4.
 
-Software - Moisture Sensor
+### Software
 
-1.	Create an Online Arduino Web Editor Account (create.arduino.cc) or download the Arduino desktop IDE
-2.	Install Arduino Create Plugin to upload code to the Arduino
+1.	Create an **Online Arduino Web Editor Account** (create.arduino.cc) or download the **Arduino desktop IDE**
+2.	Install **Arduino Create Plugin** to upload code to the Arduino
 3.	To install the Adafruit libraries
-a.	Click on Libraries on the left bar
-b.	Click on Library Manager, the blue button on the top. 
-c.	Search for Adafruit_seesaw and Star it to download the library. 
-d.	Click Include to include the Adafruit seesaw libraries.
+    - Click on Libraries on the left bar
+    - Click on Library Manager, the blue button on the top. 
+    - Search for Adafruit_seesaw and Star it to download the library. 
+    - Go to **Favorites**, mouseover the Adafruit Seesaw Library, and click **Include** to include the Adafruit seesaw libraries.
  
+  ![installing_adafruit_lib](./imgs/installing_adafruit_lib.png) 
+  
 4.	Use the following starter code:
+
+You can also find the starter code here:
+
+
 1.	#include “Adafruit_seesaw.h”;
 2.	Adafruit_seesaw ss;
 3.	
@@ -98,7 +108,7 @@ d.	Click Include to include the Adafruit seesaw libraries.
 6.	Open up the serial console at the baud rate you set in serial¬_baud to see the temperature and capacitive reading. Baud is a measurement of bit rate.
 7.	Try touching the body of the sensor to make the “moisture” measurement go up. The temperature reading is only on the chip itself but gives you an idea of the room’s temperature.
 
-LEDs
+## LEDs
 
  
 
@@ -157,7 +167,7 @@ If you are really interested in making electronic gadgets and doing embedded pro
 12.	Have fun!
 
 
-Useful References
+# Useful References
 
 Books
 •	Practical Electronics for Inventors by Paul Scherz & Simon Monk
@@ -174,7 +184,7 @@ Games
 •	Shenzhen I/O: Build circuits and write code on Steam!
 
 
-Works Cited
+# Works Cited
 
 https://www.switchdoc.com/2018/11/tutorial-capacitive-moisture-sensor-grove/
 
