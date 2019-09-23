@@ -116,7 +116,7 @@ You can also find the code [here](https://github.com/imalao/ghc2019_workshop/blo
 
 Connect the moisture sensor to the Arduino using the 4-pin JST-PH cable. JST is just the manufacturer’s name and PH is the series of cable.
 
- ![moisture_sensors](./imgs/moisture_sensors.png)
+ ![adafruit_moisture_sensor](./imgs/adafruit_moisture_sensor.png) 
 
 Looking at the image above, from top to bottom, the pinout is
 
@@ -125,7 +125,7 @@ Looking at the image above, from top to bottom, the pinout is
 3.	**Vin**: 3-5V DC. Has a regulator which supplies 5V to the 5V pin/node
 4.	**GND**: power and logic ground
 
- ![adafruit_moisture_sensor](./imgs/adafruit_moisture_sensor.png) 
+ ![moisture_sensor_pinout](./imgs/moisture_sensor_pinout.png) 
 
 - Connect **Vin Red Wire to the power supply**. Use the same voltage that the microcontroller logic is based off of. For most Arduino's, that is 5V.
 - Connect **GND Black Wire to common power/data ground**
@@ -140,7 +140,6 @@ Looking at the image above, from top to bottom, the pinout is
     - Search for **Adafruit_seesaw** and click on the **star** to download the library. 
     - Go to **Favorites**, mouse over the Adafruit Seesaw Library, and click **Include** to include the Adafruit seesaw libraries.
  
-  ![moisture_sensor_pinout](./imgs/moisture_sensor_pinout.png) 
   
 - Use the following code sample:
 
