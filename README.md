@@ -86,8 +86,7 @@ You can also find the code [here](https://github.com/imalao/ghc2019_workshop/blo
   This example code is in the public domain.
  */
  
-// Pin 13 has an LED connected on most Arduino boards.
-// give it a name:
+// digital pin connected to your LED
 int led = 13;
  
 // the setup routine runs once when you press reset:
@@ -109,6 +108,7 @@ void loop() {
 You can also find the code [here](https://github.com/imalao/ghc2019_workshop/blob/master/code/blink.ino).
 - Connect your Arduino to your laptop using the USB-B cable. 
 - **Upload and save** your code by clicking the arrow at the top. If "Arduino/Gunuino Uno" doesn't come up in the drop-down menu, check to see you have the **Arduino Create Plugin** installed.
+- Your LED should now be flashing! 
 
 ## (Module 3) Moisture Sensor 
 
@@ -140,7 +140,7 @@ Looking at the image above, from top to bottom, the pinout is
     - Search for **Adafruit_seesaw** and click on the **star** to download the library. 
     - Go to **Favorites**, mouse over the Adafruit Seesaw Library, and click **Include** to include the Adafruit seesaw libraries.
  
-  ![installing_adafruit_lib](./imgs/installing_adafruit_lib.png) 
+  ![installing_adafruit_lib](./imgs/moisture_sensor_pinout.png) 
   
 - Use the following code sample:
 
