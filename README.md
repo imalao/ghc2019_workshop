@@ -147,7 +147,7 @@ Looking at the image above, from top to bottom, the pinout is
 #include “Adafruit_seesaw.h”;
 Adafruit_seesaw ss;
 
-// to communicate with the computer, use one of the following rates: 
+// to communicate with the computer, use one of the following rates and set the serial_baud variable to the value: 
 // 300, 600, 1200, 2400, 4800, 9600, 14400, 19200, 28800, 38400, 57600, or 115200.
 uint16 serial_baud = 0; // Set the serial_baud rate
 uint16 seesaw_I2C_address = 0x36; // Adafruit seesaw I2C address
