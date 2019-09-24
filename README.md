@@ -43,7 +43,7 @@ As each table is provided with only one set of hardware components, you can opti
 
 ## (Module 1) Setting up the Arduino
 
--	Create an **Online Arduino Web Editor Account** (create.arduino.cc) or download the **Arduino desktop IDE**
+-	Create an **Online Arduino Web Editor Account** (create.arduino.cc). You can also use the **Arduino desktop IDE** but the following instructions use the Online IDE.
 -	Install **Arduino Create Plugin** to upload code to the Arduino
 - Arduino's "Hello World": Blink the on-board LED by copying this code into your sketch:
 
