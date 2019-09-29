@@ -134,6 +134,8 @@ Looking at the image above, from top to bottom, the pinout is
 
 ### Software
 
+ ![ui_screenshot](./imgs/installing_adafruit_lib.png) 
+
 -	After setting up your Arduino (Module 1), install the Adafruit libraries
     - Click on **Libraries** on the left bar
     - Click on **Library Manager**, the blue button on the top. 
@@ -144,7 +146,7 @@ Looking at the image above, from top to bottom, the pinout is
 - Use the following code sample:
 
 ```
-#include “Adafruit_seesaw.h”;
+#include "Adafruit_seesaw.h";
 Adafruit_seesaw ss;
 
 // to communicate with the computer, use one of the following rates and set the serial_baud variable to the value: 
