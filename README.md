@@ -1,6 +1,7 @@
 # Build With Us: IoT to Keep Your Plants Alive!
 
 Presenters: Ivy Malao, Star Washington, Yanning Qu
+
 Readme url: https://github.com/imalao/ghc2019_workshop/blob/master/README.md
 
 # Overview
